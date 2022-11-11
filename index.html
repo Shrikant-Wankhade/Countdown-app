@@ -10,23 +10,40 @@
 <body>
     <h1>Stopwatch</h1>
     <div id="container">
-        <p id="hour-lable" class="lable">Hours</p>
-        <p id="minute-lable" class="lable">Minutes</p>
-        <p id="seconds-lable" class="lable">Seconds</p>
-        <input id="hour" type="number" class="time" value="0" min="0" max="99">
 
-        <p id="p1" class="semicolon">:</p>
-        <input id="minute" type="number" class="time" value="0" min="0" max="60">
-
-        <p id="p2" class="semicolon">:</p>
-        <input id="minute" type="number" class="time" value="0" min="0" max="60">
-
-        <p id="p3" class="semicolon">:</p>
-        <input id="seconds" type="number" class="time" value="0" min="0" max="60">
-
-        <button id="start" class="btn">Start</button>
-        <button id="reset" class="btn">Reset</button>
+        <div class="time">
+            <div class="hr">
+                <p id="hour-lable" class="lable">Hours</p>
+                <div class="inline">
+                    <input id="hour" type="number" class="time" value="0" min="0" max="99">
+                    <p id="p1" class="semicolon">:</p>
+                </div>
+              
+            </div>
+            <div class="min">
+                <p id="minute-lable" class="lable">Minutes</p>
+                <div class="inline">
+                    <input id="minute" type="number" class="time" value="0" min="0" max="60">
+                    <p id="p2" class="semicolon">:</p>
+                </div>
+                
+            </div>
+            <div class="sec">
+                <p id="seconds-lable" class="lable">Seconds</p>
+                <div class="inline">
+                    <input id="seconds" type="number" class="time" value="0" min="0" max="60">
+                    <p id="p3" class="semicolon">:</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="btn">
+            <button id="start" class="btn">Start</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+        
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>
